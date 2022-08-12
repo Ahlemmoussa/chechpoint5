@@ -1,0 +1,42 @@
+Q1
+import numpy as np 
+tab=np.array([1,3,5,18])
+print(tab)
+print(type(tab))
+tab=tab.tolist
+print(type(tab))
+Q2
+import numpy as np
+n_array=np.array([[1,55,18],[88,19,11],[11,2,8]])
+print(n_array)
+summ = 0
+for i in range(len(n_array)):
+    for j in range(len(n_array)):
+        if i == j:
+            summ = summ + n_array[i][j]
+print(summ)            
+Q3
+import numpy as np 
+mp=np.array([[1,2,5],[15,2,6],[14,5,0]])
+print(mp)
+x=int(input('donner un entier'))
+for i in range (len(mp)):
+    for j in range (len(mp)):
+        if mp[i][j]> x :
+            print(mp([i][j]))
+Q4
+import numpy as np 
+a=np.array([15,12,131,2,3])
+b=np.array([2,0,13,15,8])
+c = np.zeros(len(a))
+for i in range(len(a)):
+    c[i]= a[i] + b[i]
+print(c)    
+    Q5
+import numpy as np 
+m=np.array([[1,2,3],[14,12,7],[18,20,22]])
+x=m.mean()
+for i in range(len(m)):
+    for j in range(len(m)):
+        m[i][j] = m[i][j]-x
+print(m)        
